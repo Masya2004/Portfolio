@@ -515,8 +515,10 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .gallery:not(.cols-1) .software-stack {
-        display: none;
+    .software-stack .software-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
     }
 }
 
