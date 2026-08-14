@@ -170,7 +170,7 @@ function renderEducation() {
     const projects = getEducationProjects();
 
     if (projects.length === 0) {
-        gallery.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #a0a0a0;">' + escapeHtml(t('noDiplomas')) + '</p>';
+        gallery.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #9aa0a8;">' + escapeHtml(t('noDiplomas')) + '</p>';
         return;
     }
 
@@ -201,7 +201,7 @@ function renderEducation() {
         info.innerHTML =
             '<h3>' + escapeHtml(project.title) + '</h3>' +
             '<p>' + escapeHtml(project.description) + '</p>' +
-            (project.files.length > 1 ? '<small style="color: #00d9ff; font-size: 0.8rem;">' + fileCountText(project.files.length) + '</small>' : '');
+            (project.files.length > 1 ? '<small style="color: #06b6d4; font-size: 0.8rem;">' + fileCountText(project.files.length) + '</small>' : '');
         item.appendChild(info);
 
         item.addEventListener('click', function() {
@@ -465,7 +465,7 @@ function renderGallery(projects) {
         itemInfo.innerHTML = `
             <h3>${escapeHtml(projectText.title)}</h3>
             <p>${escapeHtml(projectText.description)}</p>
-            <small style="color: #00d9ff; font-size: 0.8rem;">${fileCountText(project.files.length)}</small>
+            <small style="color: #06b6d4; font-size: 0.8rem;">${fileCountText(project.files.length)}</small>
         `;
 
         // Добавляем клик для открытия модального окна
@@ -650,7 +650,7 @@ function openModal(project) {
             modalGallery.appendChild(fileItem);
         });
     } else {
-        modalGallery.innerHTML = '<p style="text-align: center; color: #a0a0a0; grid-column: 1/-1;">' + escapeHtml(t('noFiles')) + '</p>';
+        modalGallery.innerHTML = '<p style="text-align: center; color: #9aa0a8; grid-column: 1/-1;">' + escapeHtml(t('noFiles')) + '</p>';
     }
     
     modal.style.display = 'block';
@@ -711,7 +711,7 @@ function renderLightboxItem() {
         pdfLink.style.justifyContent = 'center';
         pdfLink.style.height = '100%';
         pdfLink.style.fontSize = '1.5rem';
-        pdfLink.style.color = '#00d9ff';
+        pdfLink.style.color = '#06b6d4';
         pdfLink.style.textDecoration = 'none';
         container.appendChild(pdfLink);
     } else if (file.type === 'ppt') {
@@ -726,7 +726,7 @@ function renderLightboxItem() {
         pptLink.style.justifyContent = 'center';
         pptLink.style.height = '100%';
         pptLink.style.fontSize = '1.5rem';
-        pptLink.style.color = '#00ff88';
+        pptLink.style.color = '#2dd36f';
         pptLink.style.textDecoration = 'none';
         container.appendChild(pptLink);
     } else {
