@@ -463,6 +463,19 @@ nav {
     z-index: 5;
 }
 
+.software-stack .software-entry {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-shrink: 0;
+    margin-left: -30px;
+    transition: margin-left 0.35s ease;
+}
+
+.software-stack .software-entry:first-child {
+    margin-left: 0;
+}
+
 .software-stack .software-icon {
     width: 36px;
     height: 36px;
@@ -473,9 +486,7 @@ nav {
     font-size: 11px;
     font-weight: 700;
     color: #fff;
-    margin-left: -30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    transition: margin-left 0.35s ease;
     flex-shrink: 0;
     user-select: none;
     cursor: pointer;
@@ -490,8 +501,16 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.software-stack .software-icon:first-child {
-    margin-left: 0;
+.software-name {
+    display: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text);
+    white-space: nowrap;
+    background: var(--color-surface);
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid var(--color-border-light);
 }
 
 .software-stack:hover {
@@ -500,11 +519,7 @@ nav {
     gap: 6px;
 }
 
-.software-stack:hover .software-icon {
-    margin-left: 0;
-}
-
-.software-stack:hover .software-icon:first-child {
+.software-stack:hover .software-entry {
     margin-left: 0;
 }
 
@@ -514,12 +529,27 @@ nav {
     gap: 6px;
 }
 
-.software-stack.expanded .software-icon {
+.software-stack.expanded .software-entry {
     margin-left: 0;
 }
 
-.software-stack.expanded .software-icon:first-child {
-    margin-left: 0;
+@media (max-width: 768px) {
+    .gallery:not(.cols-1) .software-stack {
+        display: none;
+    }
+    .software-stack.expanded {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border-light);
+        border-radius: 12px;
+        padding: 0.5rem;
+        box-shadow: var(--shadow-md);
+        max-width: calc(100% - 24px);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .software-stack.expanded .software-name {
+        display: inline;
+    }
 }
 
 /* ===== Блок "Обо мне" ===== */
