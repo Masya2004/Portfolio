@@ -75,10 +75,21 @@ const SITE_TEXTS_EN = {
     ],
     "skills": [
       "3D modeling and texturing",
-      "VR/AR development",
-      "Unity & Unreal Engine",
-      "UI/UX for virtual environments",
-      "Optimization for VR devices"
+      "VR/AR application development",
+      "UX/UI design",
+      "VR device optimization",
+      "3D object manipulation",
+      "Concept design",
+      "Prototyping",
+      "Design project development and implementation",
+      "Game design",
+      "Digital and interactive product design",
+      "Visual concept development",
+      "Design solution visualization",
+      "Design documentation preparation",
+      "Ergonomics",
+      "User interaction design for virtual environments",
+      "VR game interaction concept design"
     ]
   },
   "contact": {
