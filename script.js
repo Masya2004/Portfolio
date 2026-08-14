@@ -303,6 +303,12 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
     });
     
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.software-stack')) {
+            closeSoftwareStacks(null);
+        }
+    });
+    
     // Close on Escape key
     document.addEventListener('keydown', function(event) {
         const lightboxOpen = document.getElementById('lightbox').classList.contains('open');
@@ -469,6 +475,12 @@ async function loadProjects() {
     }
 }
 
+function closeSoftwareStacks(except) {
+    document.querySelectorAll('.software-stack.expanded').forEach(stack => {
+        if (stack !== except) stack.classList.remove('expanded');
+    });
+}
+
 function renderGallery(projects) {
     const gallery = document.getElementById('gallery');
     gallery.innerHTML = '';
@@ -531,6 +543,7 @@ function renderGallery(projects) {
             });
             swStack.addEventListener('click', function(e) {
                 e.stopPropagation();
+                closeSoftwareStacks(this);
                 this.classList.toggle('expanded');
             });
             item.appendChild(swStack);
