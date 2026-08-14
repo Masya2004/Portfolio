@@ -8,6 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=fallback" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        if (localStorage.getItem('siteTheme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+    <style>
+        #educationGallery .gallery-item {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        }
+        #educationGallery .gallery-item img {
+        display: block !important;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,6 +33,7 @@
         <li><a href="#about">Обо мне</a></li>
         <li><a href="#contact">Контакты</a></li>
         </ul>
+        <button type="button" class="theme-switch" id="themeSwitch" title="Тёмная тема" aria-label="Тёмная тема"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
         <button type="button" class="lang-switch" id="langSwitch" title="English">EN</button>
         </nav>
     </header>

@@ -30,6 +30,8 @@ const UI_STRINGS = {
     modalDesc: 'Описание проекта',
     switchToEn: 'English',
     switchToRu: 'Русский',
+    switchToDark: 'Тёмная тема',
+    switchToLight: 'Светлая тема',
     educationTitle: 'Образование',
     educationSubtitle: 'Дипломы и профессиональная переподготовка',
     noDiplomas: 'Дипломы будут добавлены позже'
@@ -59,6 +61,8 @@ const UI_STRINGS = {
     modalDesc: 'Project description',
     switchToEn: 'English',
     switchToRu: 'Русский',
+    switchToDark: 'Dark theme',
+    switchToLight: 'Light theme',
     educationTitle: 'Education',
     educationSubtitle: 'Diplomas and professional retraining',
     noDiplomas: 'Diplomas will be added later'
