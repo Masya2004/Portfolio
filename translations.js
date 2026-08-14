@@ -270,8 +270,28 @@ const EDUCATION_DIPLOMAS = {
       subtitle: 'ВятГУ',
       files: [
         {
-          filename: 'diplom_bakalavr.jpeg',
+          filename: '8bbaffe5-02a9-42b6-8e56-982fd3ce09f0.jpeg',
           caption: 'Диплом бакалавра'
+        },
+        {
+          filename: '1a87a915-09ec-442b-a7ac-14febf0fb104.jpeg',
+          caption: ''
+        },
+        {
+          filename: '284c3045-828c-447e-8092-35d426fd1529.jpeg',
+          caption: ''
+        },
+        {
+          filename: 'a295c767-5556-4d57-ae42-fcc3e19a3fd8.jpeg',
+          caption: ''
+        },
+        {
+          filename: '0b9c8240-1afc-4c86-9020-1e6f1609d1cc.jpeg',
+          caption: ''
+        },
+        {
+          filename: '4a4fba65-d219-4410-bb37-f38a95f36444.jpeg',
+          caption: ''
         }
       ]
     },
@@ -280,8 +300,20 @@ const EDUCATION_DIPLOMAS = {
       subtitle: 'Дизайн VR · ВятГУ',
       files: [
         {
-          filename: 'diplom_perepodgotovka.jpeg',
-          caption: 'Диплом о профессиональной переподготовке'
+          filename: 'df7b6d08-306e-4f4b-bc04-95a870d301ce.jpeg',
+          caption: ''
+        },
+        {
+          filename: '495ebb0e-558b-4c8c-ac36-19826a1d2a25.jpeg',
+          caption: ''
+        },
+        {
+          filename: 'ab07217b-6089-476c-b1fd-ab60ac413f9d.jpeg',
+          caption: ''
+        },
+        {
+          filename: 'fc1f1443-07e8-443f-b5bd-0c0af3d65859.jpeg',
+          caption: ''
         }
       ]
     }
@@ -292,8 +324,28 @@ const EDUCATION_DIPLOMAS = {
       subtitle: 'Vyatka State University',
       files: [
         {
-          filename: 'diplom_bakalavr.jpeg',
+          filename: '8bbaffe5-02a9-42b6-8e56-982fd3ce09f0.jpeg',
           caption: "Bachelor's Degree Diploma"
+        },
+        {
+          filename: '1a87a915-09ec-442b-a7ac-14febf0fb104.jpeg',
+          caption: ''
+        },
+        {
+          filename: '284c3045-828c-447e-8092-35d426fd1529.jpeg',
+          caption: ''
+        },
+        {
+          filename: 'a295c767-5556-4d57-ae42-fcc3e19a3fd8.jpeg',
+          caption: ''
+        },
+        {
+          filename: '0b9c8240-1afc-4c86-9020-1e6f1609d1cc.jpeg',
+          caption: ''
+        },
+        {
+          filename: '4a4fba65-d219-4410-bb37-f38a95f36444.jpeg',
+          caption: ''
         }
       ]
     },
@@ -302,8 +354,20 @@ const EDUCATION_DIPLOMAS = {
       subtitle: 'VR Design · VyatSU',
       files: [
         {
-          filename: 'diplom_perepodgotovka.jpeg',
-          caption: 'Professional Retraining Diploma'
+          filename: 'df7b6d08-306e-4f4b-bc04-95a870d301ce.jpeg',
+          caption: ''
+        },
+        {
+          filename: '495ebb0e-558b-4c8c-ac36-19826a1d2a25.jpeg',
+          caption: ''
+        },
+        {
+          filename: 'ab07217b-6089-476c-b1fd-ab60ac413f9d.jpeg',
+          caption: ''
+        },
+        {
+          filename: 'fc1f1443-07e8-443f-b5bd-0c0af3d65859.jpeg',
+          caption: ''
         }
       ]
     }

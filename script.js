@@ -1,5 +1,5 @@
 // ===== Языковой переключатель (RU/EN) =====
-let currentLang = localStorage.getItem('siteLang') || 'ru';
+let currentLang = 'ru';
 let currentProjects = [];
 let ruSiteTexts = null;
 
@@ -187,7 +187,6 @@ function renderEducation() {
         img.src = imageSrc;
         img.alt = project.title;
         img.loading = 'lazy';
-        img.style.display = 'none';
         img.onload = function() {
             this.style.display = 'block';
         };
@@ -211,7 +210,21 @@ function renderEducation() {
         gallery.appendChild(item);
     });
 
+    // Ensure diploma items are visible immediately (fix for FOUT/animation delay)
+    const diplomaItems = gallery.querySelectorAll('.gallery-item');
+    diplomaItems.forEach(item => {
+        item.style.opacity = '1';
+        item.style.transform = 'translateY(0)';
+    });
+
     initGalleryAnimations();
+
+    // Ensure diploma items remain visible after animations initialize
+    const diplomaItems2 = gallery.querySelectorAll('.gallery-item');
+    diplomaItems2.forEach(item => {
+        item.style.opacity = '1';
+        item.style.transform = 'translateY(0)';
+    });
 }
 
 // Загрузка проектов из API и отображение на сайте
@@ -550,7 +563,7 @@ function initGalleryAnimations() {
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
+            if (entry.isIntersecting && !entry.target.closest('#educationGallery')) {
                 entry.target.style.opacity = '1';
                 entry.target.style.transform = 'translateY(0)';
             }
@@ -558,6 +571,7 @@ function initGalleryAnimations() {
     }, observerOptions);
     
     galleryItems.forEach(item => {
+        if (item.closest('#educationGallery')) return;
         item.style.opacity = '0';
         item.style.transform = 'translateY(30px)';
         item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -565,6 +579,7 @@ function initGalleryAnimations() {
     });
     
     galleryItems.forEach(item => {
+        if (item.closest('#educationGallery')) return;
         item.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-10px) scale(1.02)';
         });
