@@ -529,6 +529,10 @@ function renderGallery(projects) {
             swStack.querySelectorAll('.software-icon').forEach((icon, i) => {
                 icon.style.zIndex = 100 - i;
             });
+            swStack.addEventListener('click', function(e) {
+                e.stopPropagation();
+                this.classList.toggle('expanded');
+            });
             item.appendChild(swStack);
         }
 
