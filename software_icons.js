@@ -66,13 +66,12 @@ async function loadSoftwareIcons() {
 }
 
 // HTML иконки. Если у программы есть своя иконка (файл в icons/) — используем её,
-// иначе цветной квадрат с подписью. Рядом с иконкой — название (видно при раскрытии).
+// иначе цветной квадрат с подписью.
 function softwareIconHTML(key) {
     const icon = SOFTWARE_ICONS[key] || { name: key };
-    const name = String(icon.name || key).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     if (icon.icon) {
-        return `<span class="software-entry"><img class="software-icon" src="icons/${icon.icon}" alt="${name}" title="${name}"><span class="software-name">${name}</span></span>`;
+        return `<img class="software-icon" src="icons/${icon.icon}" alt="${icon.name}" title="${icon.name}">`;
     }
     const border = icon.stroke ? `; border:1px solid ${icon.stroke}` : '';
-    return `<span class="software-entry"><span class="software-icon" title="${name}" style="background:${icon.color || '#555555'}${border}">${icon.label || String(key).slice(0, 2).toUpperCase()}</span><span class="software-name">${name}</span></span>`;
+    return `<span class="software-icon" title="${icon.name}" style="background:${icon.color || '#555555'}${border}">${icon.label || String(key).slice(0, 2).toUpperCase()}</span>`;
 }
