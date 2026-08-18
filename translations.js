@@ -74,7 +74,7 @@ const SITE_TEXTS_EN = {
   "about": {
     "title": "About Me",
     "paragraphs": [
-      "I'm a VR designer with experience creating immersive virtual spaces. I specialize in developing VR experiences for various purposes.",
+      "I'm a digital designer with experience creating 3D visualizations, games and interactive spaces. I specialize in 3D modeling, VR/AR development and digital product design for various purposes.",
       "My skills include:"
     ],
     "skills": [
