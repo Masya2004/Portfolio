@@ -118,13 +118,13 @@ const SITE_TEXTS_EN = {
       }
     ]
   },
-  "footer": "© 2026 VR Designer Portfolio",
+  "footer": "© 2026 Digital Designer Portfolio",
   "hero": {
-    "title": "VR Designer",
-    "subtitle": "I create virtual worlds and immersive experiences",
+    "title": "Digital Designer",
+    "subtitle": "3D visualization, games, VR/AR and digital design",
     "cta": "View works"
   },
-  "logo": "VR.DESIGNER",
+  "logo": "DIGITAL.DESIGNER",
   "nav": [
     {
       "label": "Home",
