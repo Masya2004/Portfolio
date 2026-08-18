@@ -98,7 +98,6 @@ const SITE_TEXTS_EN = {
   },
   "contact": {
     "title": "Contact Me",
-    "intro": "Ready to discuss your VR project",
     "links": [
       {
         "label": "Mail: ArturManikov46@gmail.com",
