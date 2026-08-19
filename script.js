@@ -985,10 +985,6 @@ function applySiteTexts(texts) {
             const el = document.getElementById('contactTitle');
             if (el) el.textContent = texts.contact.title;
         }
-        if (texts.contact.intro) {
-            const el = document.getElementById('contactIntro');
-            if (el) el.textContent = texts.contact.intro;
-        }
         if (texts.contact.links && Array.isArray(texts.contact.links) && texts.contact.links.length > 0) {
             const el = document.getElementById('contactLinks');
             if (el) {
